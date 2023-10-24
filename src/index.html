@@ -7,14 +7,15 @@
   <title>Ada Food</title>
   <meta name="description" content="O melhor delivery de comida do universo. Os melhores restaurantes da cidade estão aqui. Peça sua refeição com agilidade, segurança e muito sabor.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger py-3">
+      <div class="container">
         <a class="navbar-brand" href="#">Ada Food</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Botão do Menu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -26,9 +27,6 @@
               <a class="nav-link" href="#">Cardápio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Restaurantes</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">Contato</a>
             </li>
           </ul>
@@ -36,6 +34,144 @@
       </div>
     </nav>
   </header>
+
+  <main>
+    <div id="homePageCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homePageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#homePageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#homePageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#homePageCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/images/carousel-01.jpg" class="d-block w-100" alt="Legumes frescos e deliciosos">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/carousel-02.jpg" class="d-block w-100" alt="Comida japonesa de dar agua na boca">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/carousel-03.jpg" class="d-block w-100" alt="Hambuguer suculento com batata frita como acompanhamento">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/carousel-04.jpg" class="d-block w-100" alt="Delicioso yakissoba de camarão">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#homePageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homePageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+    <div>
+      <div class="container">
+        <div class="row py-3 py-md-5">
+          <div class="col-12 d-flex flex-column align-items-start justify-content-center gap-1">
+            <h2 class="titulo display-4"><b class="text-danger">P</b>orque pedir</h2>
+            <p>A <strong class="text-danger">Ada Food</strong> oferece uma série de benefícios, incluindo comodidade, variedade, economia de tempo e dinheiro, além de suporte aos restaurantes locais. Essa opção tem se tornado cada vez mais popular devido à sua praticidade e flexibilidade.</p>
+            <p>A <strong class="text-danger">Ada Food</strong> se compromete em oferecer um atendimento especializado, tornando a satisfação do cliente a maior prioridade.</p>
+            <p>Estamos sempre de portas abertas para críticas e sugestões, com o intuito de sempre aprimorar o nosso trabalho.</p>
+            <a href="#" class="btn btn-danger text-uppercase">Conheça nosso Cardápio</a>
+          </div>
+        </div>
+
+        <div class="row pb-3 pb-md-5">
+          <div class="col-12 d-flex flex-column align-items-start justify-content-center gap-1">
+            <h2 class="titulo display-4"><b class="text-danger">R</b>estaurantes</h2>
+            <table class="table table-danger table-bordless table-hover table-striped table-responsive">
+              <thead class="table-dark">
+                <tr>
+                  <th>Nome</th>
+                  <th>Nota</th>
+                  <th>Categoria</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hitaki Sushi</td>
+                  <td>9</td>
+                  <td>Culinária Japonesa</td>
+                </tr>
+                <tr>
+                  <td>La Bella Trattoria</td>
+                  <td>8</td>
+                  <td>Culinária Italiana</td>
+                </tr>
+                <tr>
+                  <td>Spice Fusion</td>
+                  <td>7</td>
+                  <td>Culinária Indiana</td>
+                </tr>
+                <tr>
+                  <td>Sabor Mexicano</td>
+                  <td>9</td>
+                  <td>Culinária Mexicana</td>
+                </tr>
+                <tr>
+                  <td>Le Parisien</td>
+                  <td>8</td>
+                  <td>Culinária Francesa</td>
+                </tr>
+                <tr>
+                  <td>Thai Delight</td>
+                  <td>9</td>
+                  <td>Culinária Tailandesa</td>
+                </tr>
+                <tr>
+                  <td>Grill House</td>
+                  <td>7</td>
+                  <td>Churrascaria</td>
+                </tr>
+                <tr>
+                  <td>Veggie Haven</td>
+                  <td>8</td>
+                  <td>Vegetariano/Vegano</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-danger text-white py-2 py-md-4">
+    <div class="container">
+
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+          <span class="text-uppercase h6">Páginas</span>
+          <ul class="list-unstyled mt-2">
+            <li><a class="text-decoration-none link-light" href="./planos.html">Cardápio</a></li>
+            <li><a class="text-decoration-none link-light" href="./inscricao.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4">
+          <span class="text-uppercase h6">Dados de Contato</span>
+          <ul class="list-unstyled text-secondary-emphasis mt-2">
+            <li><a class="text-decoration-none link-light" href="mailto:suporte@adafood.com">suporte@adafood.com</a></li>
+            <li><a class="text-decoration-none link-light" href="tel:+5582999999999">82 99999-9999</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-4 col-md-3">
+          <span class="text-uppercase h6">Redes Sociais</span>
+          <ul class="list-unstyled mt-2">
+            <li><a class="btn btn-outline-light btn-sm d-block" href="">Facebook</a></li>
+            <li><a class="btn btn-outline-light btn-sm d-block my-2" href="">Twitter</a></li>
+            <li><a class="btn btn-outline-light btn-sm d-block" href="">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+  </footer>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
