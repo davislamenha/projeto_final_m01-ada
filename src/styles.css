@@ -3,3 +3,40 @@
   object-fit: cover;
   max-height: 30vw;
 }
+
+main {
+  min-height: calc(100vh - 278px);
+}
+
+.nav-pills .nav-link {
+  color: #dc3545;
+  transition: all 0.3s;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.card {
+  height: 500px;
+}
+
+.card img {
+  height: 360px;
+  object-fit: cover;
+}
+
+textarea {
+  resize: none;
+}
+
+#mensagem:focus,
+input[type='text']:focus,
+input[type='email']:focus {
+  border-color: rgba(220, 53, 69, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(220, 53, 69, 0.6);
+  outline: 0 none;
+}
